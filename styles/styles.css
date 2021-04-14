@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:64px calc(100vh - 104px) 38px;
+}
+
+header {
+  align-self: end;
+  padding-left: 6%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 1fr;
+}
+
+.img-container {
+  justify-self: center;
+  align-self: center;
+}
+
+img {
+  height: 447px;
+  width: 540;
+}
+
+.msg-container {
+  justify-self: center;
+  align-self: center;
+}
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: -1px;
+  font-size: 24px;
+  color: #333333;
+}
+
+h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 64px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 95px;
+  width: 586px;
+  height: 190px;
+}
+
+div p {
+  font-family: 'Space Mono', monospace;
+  margin-top: 36px;
+  margin-bottom: 64px;
+  width: 381px;
+  height: 108px;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #4F4F4F;
+}
+
+button {
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 24px 43px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  font-family: 'Montserrat', sans-serif;
+  color: #BDBDBD;
+}
+
+@media screen and (max-width: 770px) {
+  body { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    width: 350px;
+    height: 142px;
+    font-size: 48px;
+    line-height: 71px;
+  }
+
+  .msg-container p {
+    margin-top: 10px;
+    margin-bottom: 44px;
+    width: 328px;
+    height: 81px;
+    font-size: 18px;
+  }
+
+  img {
+    height: 286px;
+    width: auto;
+  }
+}
